@@ -12,9 +12,11 @@ const Navbar = () => {
     const navLinks = [
         { title: "முகப்பு", path: "#home" },
         { title: "நிகழ்வைப் பற்றி", path: "#about" },
+        { title: "பங்குபெறும் அமைப்புகள்", path: "#involvedOrganizations" },
+
         { title: "தொடர்பு", path: "#contact" },
-        { title: "இடம்", path: "#place" },
-    ];
+        { title: "இடம்", path: "#location" },
+    ];    
 
     const sidebarVariants = {
         open: {
@@ -73,9 +75,9 @@ const Navbar = () => {
                 <div className="flex items-center justify-center h-16 ">
                     <div className="hidden md:block">
                         <div className="ml-10 flex items-center space-x-8">
-                            {navLinks.map((link) => (
+                            {navLinks.map((link, index) => (
                                 <a
-                                    key={link.path}
+                                    key={index}
                                     href={link.path}
                                     className="text-gray-700 hover:text-blue-600 px-3 py-2 text-base font-medium transition-colors duration-200"
                                 >

@@ -2,7 +2,7 @@ import About from './Components/About/About';
 import Hero from './Components/Hero/Hero';
 import InvolvedOrganizations from './Components/InvolvedOrganizations/InvolvedOrganizations';
 import NavBar from "./Components/NavBar/NavBar"
-import ContactContainer from './Components/Contact/ContactContainer';
+import ContactContainer from './Components/ContactContainer';
 import Footer from "./Components/Footer/Footer"
 
 export default function App() {

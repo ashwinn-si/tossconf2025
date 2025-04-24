@@ -1,4 +1,4 @@
-import image from "./../Assets/Logo.jpg";
+import image from "./../../Assets/Logo.jpg";
 import { motion } from "framer-motion";
 
 export default function DesktopHero() {

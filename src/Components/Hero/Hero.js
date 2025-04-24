@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
 import MobileHero from "./MobileHero";
-import DesktopHero from "../DesktopHero";
+import DesktopHero from "./DesktopHero";
 
 
 export default function Header() {

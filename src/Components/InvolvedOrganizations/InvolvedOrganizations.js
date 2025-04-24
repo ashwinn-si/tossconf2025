@@ -47,7 +47,6 @@ export default function InvolvedOrganizations() {
                     viewport={{ once: true }}
                     transition={{ duration: 0.8 }}
                 >
-                    {/* Text container */}
                     <motion.div
                         className="w-full lg:w-1/2 mt-8 lg:mt-0"
                         initial={{ x: -50, opacity: 0 }}
@@ -69,7 +68,7 @@ export default function InvolvedOrganizations() {
                             {organizations.map((org, index) => (
                                 <motion.li
                                     key={index}
-                                    className="flex items-center bg-white/80 backdrop-blur-sm p-4 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300"
+                                    className="flex items-center bg-white/80 backdrop-blur-sm p-4 rounded-lg shadow-sm hover:shadow-xl transition-all duration-300 hover:text-blue-500 text-gray-700 font-medium cursor-pointer"
                                     initial={{ opacity: 0, y: 20 }}
                                     whileInView={{ opacity: 1, y: 0 }}
                                     viewport={{ once: true }}
@@ -77,7 +76,6 @@ export default function InvolvedOrganizations() {
                                         delay: 0.1 * index,
                                         duration: 0.5,
                                     }}
-                                    whileHover={{ x: 5 }}
                                 >
                                     <div
                                         className="w-3 h-3 rounded-full mr-3 flex-shrink-0"
@@ -86,11 +84,7 @@ export default function InvolvedOrganizations() {
                                                 "linear-gradient(90deg, rgba(24, 195, 193, 1) 18%, rgba(24, 141, 208, 1) 70%)",
                                         }}
                                     ></div>
-                                    <a
-                                        href={org.link}
-                                        target="_blank"
-                                        className="text-gray-700 hover:text-gray-900 font-medium cursor-pointer"
-                                    >
+                                    <a href={org.link} target="_blank">
                                         {org.title}
                                     </a>
                                 </motion.li>

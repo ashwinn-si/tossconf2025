@@ -6,7 +6,7 @@ export default function About() {
     return (
         <div className="px-4 py-6 bg-zinc">
             <motion.div
-                className="flex flex-col lg:flex-row  items-center gap-8 lg:gap-16 max-w-6xl mx-auto"
+                className="flex flex-col lg:flex-row  items-center  gap-8 lg:gap-16 max-w-6xl mx-auto"
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
                 viewport={{ once: true }}
@@ -23,7 +23,7 @@ export default function About() {
                     <img
                         src={aboutImage}
                         alt="தமிழ் கட்டற்ற மென்பொருள் மாநாடு"
-                        className="w-full max-w-sm h-auto rounded-lg shadow-lg object-cover"
+                        className="w-full max-w-sm h-auto rounded-lg object-cover"
                     />
                 </motion.div>
 
